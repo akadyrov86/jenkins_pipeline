@@ -6,7 +6,7 @@ node {
  }
 
  stage("Install Apache"){
-  sh "ssh ec2-iser@${DEVIP}   sudo yum install httpd -y"
+  sh "ssh ec2-user@${DEVIP}   sudo yum install httpd -y"
  }
 
  stage("Start Apache"){
